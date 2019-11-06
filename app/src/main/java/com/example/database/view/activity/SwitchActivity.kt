@@ -19,4 +19,11 @@ class SwitchActivity : AppCompatActivity() {
         startActivity(Intent(this, SignInActivity::class.java))
         finish()
     }
+
+//    {
+//        "rules": {
+//        ".read": true,
+//        ".write": true
+//    }
+//    }
 }
