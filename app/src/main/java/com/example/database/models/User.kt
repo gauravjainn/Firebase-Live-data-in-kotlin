@@ -4,8 +4,8 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 class User {
-    var username: String
-    var email: String
+    lateinit var username: String
+    lateinit var email: String
 
     constructor() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)

@@ -7,7 +7,7 @@ android {
 	buildToolsVersion '29.0.2'
 
 	defaultConfig {
-		applicationId "com.kotlin.firebaselivedatabase"
+		applicationId "com.app.googlemapinkotlin"
 		minSdkVersion 21
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1

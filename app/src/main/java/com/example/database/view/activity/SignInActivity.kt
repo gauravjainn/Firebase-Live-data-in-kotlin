@@ -45,11 +45,11 @@ class SignInActivity : BaseActivity(), View.OnClickListener {
     private fun onAuthSuccess(firebaseUser: FirebaseUser) {
         val email = firebaseUser.email
         var username = email
+
         if (email != null && email.contains("@")) {
             username = email.split("@".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()[0]
         }
-
-        val user = User(username, email)
+        val user = username?.let { email?.let { it1 -> User(it, it1) } }
         val mDatabase = FirebaseDatabase.getInstance().reference
         mDatabase.child("users").child(firebaseUser.uid).setValue(user)
 
