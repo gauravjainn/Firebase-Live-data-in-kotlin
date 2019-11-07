@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.database.R;
 import com.example.database.models.StudentDetails;
 import com.firebase.client.Firebase;
@@ -17,7 +16,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -93,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
-
 
     }
 
