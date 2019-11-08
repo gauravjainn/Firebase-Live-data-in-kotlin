@@ -26,13 +26,13 @@
 		android:layout_centerInParent="true">
 
 		<Button
-			android:id="@+id/btn_basic"
+			android:id="@+id/btn_chat"
 			style="?android:attr/button"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:visibility="gone"
-			android:text="@string/btn_basic"
+			android:onClick="gotoChat"
+			android:text="chat example"
 			android:textAllCaps="false"/>
 
 		<!--android:onClick="gotoBasic"-->
